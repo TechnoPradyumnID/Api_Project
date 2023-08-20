@@ -34,6 +34,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
+
 }
 
 dependencies {
@@ -45,4 +50,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    //noinspection UseTomlInstead
+    implementation ("com.android.volley:volley:1.2.1")
+
+    //noinspection UseTomlInstead
+    implementation("com.google.code.gson:gson:2.10")
+
+    //noinspection UseTomlInstead
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+
 }
